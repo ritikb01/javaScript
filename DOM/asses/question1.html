@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function grade() {
+            const x = Number(document.getElementById("name").value);
+            if(x>99 && x<101){
+                document.getElementById("result").innerHTML = `<p>Grade obtained by the student is : A+</p>`;
+            }else if(x>89 && x<100){
+                document.getElementById("result").innerHTML = `<p>Grade obtained by the student is : A</p>`;
+            }else if(x>79 && x<90){
+                document.getElementById("result").innerHTML = `<p>Grade obtained by the student is : B</p>`;
+            }else if(x>69 && x<80){
+                document.getElementById("result").innerHTML = `<p>Grade obtained by the student is : C</p>`;
+            }else if(x>59 && x<70){
+                document.getElementById("result").innerHTML = `<p>Grade obtained by the student is : D</p>`;
+            }else if(x>49 && x<60){
+                document.getElementById("result").innerHTML = `<p>Grade obtained by the student is : E</p>`;
+            }else if(x<50){
+                document.getElementById("result").innerHTML = `<p>Grade obtained by the student is : RA</p>`;
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <h1>Grade Sheet</h1>
+    <p>Marks
+        <input type="text" id="name" name="Name"></p>
+    <input type="button" id="post" value="Submit" onclick="grade()"><br>
+    <div id="result">
+
+    </div>
+
+
+</body>
+
+</html>
